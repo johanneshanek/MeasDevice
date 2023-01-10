@@ -25,31 +25,26 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ObjectListView1 = New BrightIdeasSoftware.ObjectListView()
+        Me.OlvColumn1 = CType(New BrightIdeasSoftware.OLVColumn(), BrightIdeasSoftware.OLVColumn)
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ZedGraphControl1 = New ZedGraph.ZedGraphControl()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ZedGraphControl1 = New ZedGraph.ZedGraphControl()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        CType(Me.ObjectListView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,14 +56,7 @@ Partial Class Main
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox8)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox7)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox6)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox5)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox4)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox3)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox2)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.CheckBox1)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.ObjectListView1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.ToolStrip1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.StatusStrip1)
         '
@@ -79,101 +67,27 @@ Partial Class Main
         Me.SplitContainer1.SplitterDistance = 299
         Me.SplitContainer1.TabIndex = 0
         '
-        'CheckBox8
+        'ObjectListView1
         '
-        Me.CheckBox8.Checked = True
-        Me.CheckBox8.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox8.Location = New System.Drawing.Point(0, 207)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox8.TabIndex = 8
-        Me.CheckBox8.Text = "Channel 8"
-        Me.CheckBox8.UseVisualStyleBackColor = True
+        Me.ObjectListView1.AllColumns.Add(Me.OlvColumn1)
+        Me.ObjectListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.OlvColumn1})
+        Me.ObjectListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ObjectListView1.HideSelection = False
+        Me.ObjectListView1.Location = New System.Drawing.Point(0, 25)
+        Me.ObjectListView1.Name = "ObjectListView1"
+        Me.ObjectListView1.ShowGroups = False
+        Me.ObjectListView1.Size = New System.Drawing.Size(299, 403)
+        Me.ObjectListView1.TabIndex = 10
+        Me.ObjectListView1.UseCompatibleStateImageBehavior = False
+        Me.ObjectListView1.View = System.Windows.Forms.View.Details
         '
-        'CheckBox7
+        'OlvColumn1
         '
-        Me.CheckBox7.Checked = True
-        Me.CheckBox7.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox7.Location = New System.Drawing.Point(0, 181)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox7.TabIndex = 7
-        Me.CheckBox7.Text = "Channel 7"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.Checked = True
-        Me.CheckBox6.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox6.Location = New System.Drawing.Point(0, 155)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox6.TabIndex = 6
-        Me.CheckBox6.Text = "Channel 6"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.Checked = True
-        Me.CheckBox5.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox5.Location = New System.Drawing.Point(0, 129)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox5.TabIndex = 5
-        Me.CheckBox5.Text = "Channel 5"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.Checked = True
-        Me.CheckBox4.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox4.Location = New System.Drawing.Point(0, 103)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox4.TabIndex = 4
-        Me.CheckBox4.Text = "Channel 4"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.Checked = True
-        Me.CheckBox3.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox3.Location = New System.Drawing.Point(0, 77)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox3.TabIndex = 3
-        Me.CheckBox3.Text = "Channel 3"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.Checked = True
-        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox2.Location = New System.Drawing.Point(0, 51)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox2.TabIndex = 2
-        Me.CheckBox2.Text = "Channel 2"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CheckBox1.Location = New System.Drawing.Point(0, 25)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(299, 26)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.Text = "Channel 1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.OlvColumn1.AspectName = "Name"
+        Me.OlvColumn1.CellPadding = Nothing
+        Me.OlvColumn1.FillsFreeSpace = True
+        Me.OlvColumn1.Text = "Name"
+        Me.OlvColumn1.Width = 232
         '
         'ToolStrip1
         '
@@ -184,10 +98,63 @@ Partial Class Main
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.MeasDevice.My.Resources.Resources.icons8_anfang_50
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "Start"
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Enabled = False
+        Me.ToolStripButton2.Image = Global.MeasDevice.My.Resources.Resources.icons8_stop_50
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton2.Text = "Stop"
+        '
+        'ToolStripButton3
+        '
+        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton3.Image = Global.MeasDevice.My.Resources.Resources.icons8_symbol__löschen_24
+        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton3.Name = "ToolStripButton3"
+        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton3.Text = "Alles löschen"
+        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Image = Global.MeasDevice.My.Resources.Resources.icons8_exportieren_24
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton4.Text = "Export"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
+        '
+        'ToolStripButton5
+        '
+        Me.ToolStripButton5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton5.Image = Global.MeasDevice.My.Resources.Resources.logo
+        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton5.Name = "ToolStripButton5"
+        Me.ToolStripButton5.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton5.Text = "Run InstaCal"
         '
         'ToolStripComboBox1
         '
@@ -197,6 +164,16 @@ Partial Class Main
         Me.ToolStripComboBox1.Size = New System.Drawing.Size(75, 25)
         Me.ToolStripComboBox1.Text = "1"
         Me.ToolStripComboBox1.ToolTipText = "Messintervall"
+        '
+        'ToolStripButton6
+        '
+        Me.ToolStripButton6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton6.Image = Global.MeasDevice.My.Resources.Resources.icons8_informationen_24
+        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton6.Name = "ToolStripButton6"
+        Me.ToolStripButton6.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton6.Text = "ToolStripButton6"
         '
         'StatusStrip1
         '
@@ -226,69 +203,6 @@ Partial Class Main
         '
         Me.Timer1.Interval = 500
         '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = Global.usbtemp.My.Resources.Resources.icons8_anfang_50
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton1.Text = "Start"
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Enabled = False
-        Me.ToolStripButton2.Image = Global.usbtemp.My.Resources.Resources.icons8_stop_50
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "Stop"
-        '
-        'ToolStripButton3
-        '
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = Global.usbtemp.My.Resources.Resources.icons8_symbol__löschen_24
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton3.Text = "Alles löschen"
-        '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = Global.usbtemp.My.Resources.Resources.icons8_exportieren_24
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton4.Text = "Export"
-        '
-        'ToolStripButton5
-        '
-        Me.ToolStripButton5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton5.Image = Global.usbtemp.My.Resources.Resources.logo
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton5.Text = "Run InstaCal"
-        '
-        'ToolStripButton6
-        '
-        Me.ToolStripButton6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton6.Image = Global.usbtemp.My.Resources.Resources.icons8_informationen_24
-        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton6.Text = "ToolStripButton6"
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -303,6 +217,7 @@ Partial Class Main
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        CType(Me.ObjectListView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -310,19 +225,11 @@ Partial Class Main
     End Sub
 
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents ZedGraphControl1 As ZedGraph.ZedGraphControl
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
     Friend WithEvents ToolStripButton3 As ToolStripButton
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents StatusStrip1 As StatusStrip
@@ -331,4 +238,6 @@ Partial Class Main
     Friend WithEvents ToolStripComboBox1 As ToolStripComboBox
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripButton6 As ToolStripButton
+    Friend WithEvents ObjectListView1 As BrightIdeasSoftware.ObjectListView
+    Friend WithEvents OlvColumn1 As BrightIdeasSoftware.OLVColumn
 End Class
